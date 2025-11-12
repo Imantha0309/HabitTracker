@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Top Gradient Background -->
+    <ImageView
+        android:id="@+id/topWave"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wave_bg"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/habit_logo"
+        app:layout_constraintTop_toTopOf="@id/topWave"
+        app:layout_constraintBottom_toBottomOf="@id/topWave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HabitBuddy"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/topWave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Create Account Button -->
+    <Button
+        android:id="@+id/btnSignupPage"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLoginPage"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_500"
+        android:background="@drawable/bg_button_outline"
+        app:layout_constraintTop_toBottomOf="@id/btnSignupPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Motivational Tagline -->
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Small daily habits are the invisible architecture of big success."
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/luminous_blue"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

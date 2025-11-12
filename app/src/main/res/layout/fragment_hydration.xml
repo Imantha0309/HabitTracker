@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hydration Tracker"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Current hydration -->
+        <TextView
+            android:id="@+id/tvCurrentHydration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 ml"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Goal Section -->
+        <LinearLayout
+            android:id="@+id/layoutSetGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/etGoal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter goal (ml)"
+                android:inputType="number"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnSetGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Goal"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Remaining -->
+        <TextView
+            android:id="@+id/tvRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaining: 2500 ml"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Quick Add -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Add"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnAdd180"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+180 ml"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnAdd250"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+250 ml"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnAdd500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+500 ml"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Manual Add -->
+        <LinearLayout
+            android:id="@+id/layoutManualAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/etManualAmount"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter ml"
+                android:inputType="number"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnAddManual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Reminder Interval -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder Interval"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Start & Stop buttons in the same row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnStartReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Reminder"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnStopReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop Reminder"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Goal Progress"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHydration"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="2500"
+            android:progress="0"
+            android:progressTint="@color/purple_500" />
+    </LinearLayout>
+</ScrollView>

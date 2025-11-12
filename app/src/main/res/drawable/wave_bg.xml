@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="200dp"
+    android:viewportWidth="400"
+    android:viewportHeight="200">
+
+    <!-- Top Gradient -->
+    <path
+        android:fillColor="@android:color/holo_blue_light"
+        android:pathData="M0,0 L0,150 Q200,250 400,150 L400,0 Z" />
+</vector>

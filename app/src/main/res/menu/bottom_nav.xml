@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_habits"
+        android:title="Habits"
+        android:icon="@drawable/ic_habit" />
+
+    <item
+        android:id="@+id/nav_mood"
+        android:title="Mood"
+        android:icon="@drawable/ic_mood" />
+
+    <item
+        android:id="@+id/nav_hydration"
+        android:title="Hydration"
+        android:icon="@drawable/ic_hydration" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings" />
+
+
+
+</menu>

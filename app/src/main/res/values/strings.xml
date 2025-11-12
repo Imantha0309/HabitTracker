@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Habit Tracker</string>
+
+    <string-array name="reminder_intervals">
+        <item>10 sec</item>
+        <item>1 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+    </string-array>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Emoji Selector -->
+    <Spinner
+        android:id="@+id/spinnerEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Mood Note -->
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write how you feel..."
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/black"
+        android:inputType="textMultiLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnSaveMood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save Mood"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnDeleteAllMoods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Delete All Moods"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Make View Stats same size -->
+    <Button
+        android:id="@+id/btnViewStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Mood Stats"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"/>
+
+
+
+
+    <!-- Mood List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+
