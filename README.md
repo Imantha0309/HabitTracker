@@ -1,9 +1,12 @@
-*Language: Kotlin (100%)
-*UI Framework: Jetpack Compose for a reactive, declarative user interface.
-*Database: Room Persistence Library for local SQLite data management
-*Asynchronous Tasks: Kotlin Coroutines and Flow for smooth, non-blocking database operations.
-*Architecture Pattern: MVVM (Model-View-ViewModel) to separate business logic from the UI
+## 🛠 Tech Stack
+* **Language:** [Kotlin](https://kotlinlang.org/)
+* **UI Framework:** Jetpack Compose
+* **Database:** Room (SQLite)
+* **Architecture:** MVVM (Model-View-ViewModel)
+* **Concurrency:** Kotlin Coroutines & Flow
+* **Dependency Injection:** Hilt (or Koin)
 
+## 📸 Screenshots
 ---
 
 ## 📂 Project Structure
