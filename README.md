@@ -1,34 +1,8 @@
-# 🚀 Project Name
-
-> A modern, user-focused web application built with clean UI, scalable structure, and real-world usability in mind.
-
----
-
-## 📌 Overview
-
-This project is designed as a **production-ready web application**, not a tutorial clone.  
-It focuses on **clarity, performance, and user experience**, following real frontend development and UI/UX best practices.
-
-The goal is simple: **build something that could actually be shipped.**
-
----
-
-## ✨ Features
-
-- Responsive and mobile-first design  
-- Clean and intuitive user interface  
-- Reusable and well-structured components  
-- Optimized layout and performance  
-- Cross-browser compatibility  
-
----
-
-## 🛠 Tech Stack
-
-- **HTML5**
-- **CSS3** (Flexbox / Grid)
-- **JavaScript**
-- **Git & GitHub**
+*Language: Kotlin (100%)
+*UI Framework: Jetpack Compose for a reactive, declarative user interface.
+*Database: Room Persistence Library for local SQLite data management
+*Asynchronous Tasks: Kotlin Coroutines and Flow for smooth, non-blocking database operations.
+*Architecture Pattern: MVVM (Model-View-ViewModel) to separate business logic from the UI
 
 ---
 
